@@ -43,3 +43,18 @@ module.rules: [
 [side-effect](https://github.com/webpack/webpack/tree/master/examples/side-effects)
 
 #### TODO: the "sideEffects" config doesn't work till now(it may already work because when added it, the packaging time longer, let's see if it has big difference when bigger product)
+
+
+### Minify the Output
+with: 
+* mode: "production";
+
+* -p flag of cli
+
+
+### Conclusion
+So, what we've learned is that in order to take advantage of tree shaking, you must...
+
+* Use ES2015 module syntax (i.e. import and export).
+* Add a "sideEffects" entry to your project's package.json file.
+* Include a minifier that supports dead code removal (e.g. the UglifyJSPlugin).
